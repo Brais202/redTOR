@@ -20,8 +20,6 @@ practica_final/
 ├── pubkeys # Diccionario de claves públicas
 └── README.md # Este archivo
 
-text
-
 ## ⚙️ Instalación y Configuración
 
 ### Prerrequisitos
@@ -60,22 +58,5 @@ diccionario_claves = {
     "svf": "clave_publica_svf",
     "ancr": "clave_publica_ancr"
 }
-## 🚀 Uso
-Ejecutar Nodo Receptor
-bash
-python nodo_receptor.py
-El nodo comenzará a escuchar mensajes en el canal MQTT correspondiente a tu ID.
 
-Enviar Mensaje
-bash
-python nodo_emisor.py
-Esto enviará el mensaje configurado a través de la ruta especificada.
 
-Configurar Envío
-Modifica la sección "send" en config.json:
-
-"anonymous": true para mensajes anónimos, false para identificados
-
-"message": El texto del mensaje a enviar
-
-"path": Array con la ruta de nodos: ["origen", "salto1", "salto2", "destino"]
